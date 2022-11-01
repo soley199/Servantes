@@ -1,0 +1,12 @@
+<?php
+	$dsn = 'mysql:dbname=coleg168_bd_servantes;host=localhost';
+	$user = 'coleg168_mar';
+	$pass = 'Encis01.';
+
+	try {
+		$pdo = new PDO($dsn, $user, $pass,array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES  \'UTF8\''));
+		
+	} catch (PDOException $e) {
+		echo 'Error al conectar '. $e->getMessage();
+	}
+?>
