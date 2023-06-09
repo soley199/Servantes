@@ -1,6 +1,6 @@
 <?php
 	require_once('../conexion.php');
-	if(!isset($_POST['Id_img']) & $_POST['nombreimg']){
+	if(!isset($_POST['Id_img'])){
 		header("Location: ../home_page.php");
 	}else{
 			$allowedExts = array("gif", "jpeg", "jpg", "png");

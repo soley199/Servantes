@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-11-2022 a las 23:03:38
--- Versión del servidor: 10.4.24-MariaDB
--- Versión de PHP: 8.0.19
+-- Tiempo de generación: 09-06-2023 a las 17:04:49
+-- Versión del servidor: 10.4.27-MariaDB
+-- Versión de PHP: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -61,7 +61,7 @@ CREATE TABLE `contenido_padres` (
   `Mod_text_5` text NOT NULL,
   `Mod_img_descarga_5` text NOT NULL,
   `Mod_img_5` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16;
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_general_ci;
 
 --
 -- Volcado de datos para la tabla `contenido_padres`
@@ -79,43 +79,43 @@ INSERT INTO `contenido_padres` (`id_con_pa`, `img_1`, `titulo_1`, `img_2`, `titu
 CREATE TABLE `desarrollo_pag` (
   `id_desarrollo` int(11) NOT NULL,
   `Titulo` text NOT NULL,
-  `titulo_1` text CHARACTER SET latin1 NOT NULL,
-  `text_1` text CHARACTER SET latin1 NOT NULL,
-  `img_1` text CHARACTER SET latin1 NOT NULL,
-  `img_1_1` text CHARACTER SET latin1 NOT NULL,
-  `titulo_1_1` text CHARACTER SET latin1 NOT NULL,
-  `text_1_1` text CHARACTER SET latin1 NOT NULL,
-  `img_1_2` text CHARACTER SET latin1 NOT NULL,
-  `titulo_1_2` text CHARACTER SET latin1 NOT NULL,
-  `text_1_2` text CHARACTER SET latin1 NOT NULL,
-  `titulo_2` text CHARACTER SET latin1 NOT NULL,
-  `text_2` text CHARACTER SET latin1 NOT NULL,
-  `img_2` text CHARACTER SET latin1 NOT NULL,
-  `img_2_1` text CHARACTER SET latin1 NOT NULL,
-  `titulo_2_1` text CHARACTER SET latin1 NOT NULL,
-  `text_2_1` text CHARACTER SET latin1 NOT NULL,
-  `img_2_2` text CHARACTER SET latin1 NOT NULL,
-  `titulo_2_2` text CHARACTER SET latin1 NOT NULL,
-  `text_2_2` text CHARACTER SET latin1 NOT NULL,
-  `titulo_3` text CHARACTER SET latin1 NOT NULL,
-  `text_3` text CHARACTER SET latin1 NOT NULL,
-  `img_3` text CHARACTER SET latin1 NOT NULL,
-  `img_3_1` text CHARACTER SET latin1 NOT NULL,
-  `titulo_3_1` text CHARACTER SET latin1 NOT NULL,
-  `text_3_1` text CHARACTER SET latin1 NOT NULL,
-  `img_3_2` text CHARACTER SET latin1 NOT NULL,
-  `titulo_3_2` text CHARACTER SET latin1 NOT NULL,
-  `text_3_2` text CHARACTER SET latin1 NOT NULL,
-  `titulo_4` text CHARACTER SET latin1 NOT NULL,
-  `text_4` text CHARACTER SET latin1 NOT NULL,
-  `img_4` text CHARACTER SET latin1 NOT NULL,
-  `img_4_1` text CHARACTER SET latin1 NOT NULL,
-  `titulo_4_1` text CHARACTER SET latin1 NOT NULL,
-  `text_4_1` text CHARACTER SET latin1 NOT NULL,
-  `img_4_2` text CHARACTER SET latin1 NOT NULL,
-  `titulo_4_2` text CHARACTER SET latin1 NOT NULL,
-  `text_4_2` text CHARACTER SET latin1 NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16;
+  `titulo_1` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `text_1` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `img_1` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `img_1_1` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `titulo_1_1` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `text_1_1` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `img_1_2` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `titulo_1_2` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `text_1_2` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `titulo_2` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `text_2` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `img_2` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `img_2_1` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `titulo_2_1` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `text_2_1` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `img_2_2` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `titulo_2_2` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `text_2_2` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `titulo_3` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `text_3` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `img_3` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `img_3_1` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `titulo_3_1` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `text_3_1` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `img_3_2` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `titulo_3_2` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `text_3_2` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `titulo_4` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `text_4` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `img_4` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `img_4_1` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `titulo_4_1` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `text_4_1` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `img_4_2` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `titulo_4_2` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,
+  `text_4_2` text CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_general_ci;
 
 --
 -- Volcado de datos para la tabla `desarrollo_pag`
@@ -133,7 +133,7 @@ INSERT INTO `desarrollo_pag` (`id_desarrollo`, `Titulo`, `titulo_1`, `text_1`, `
 CREATE TABLE `estatus` (
   `Id_Estatus` int(11) NOT NULL,
   `Estatus` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Volcado de datos para la tabla `estatus`
@@ -182,7 +182,7 @@ CREATE TABLE `kinder_pag` (
   `Mod_titu_5` text NOT NULL,
   `Mod_text_5` text NOT NULL,
   `Mod_img_5` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16;
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_general_ci;
 
 --
 -- Volcado de datos para la tabla `kinder_pag`
@@ -226,7 +226,7 @@ CREATE TABLE `mejor_eleccion` (
   `6_img` text NOT NULL,
   `6_titulo` varchar(80) NOT NULL,
   `6_text` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16;
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_general_ci;
 
 --
 -- Volcado de datos para la tabla `mejor_eleccion`
@@ -289,7 +289,7 @@ CREATE TABLE `pirmaria_pag` (
   `Mod_titu_8` text NOT NULL,
   `Mod_text_8` text NOT NULL,
   `Mod_img_8` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Volcado de datos para la tabla `pirmaria_pag`
@@ -319,7 +319,7 @@ CREATE TABLE `quienes_somos_pag` (
   `tex_4` text NOT NULL,
   `Titulo_5` text NOT NULL,
   `img` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16;
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_general_ci;
 
 --
 -- Volcado de datos para la tabla `quienes_somos_pag`
@@ -339,7 +339,7 @@ CREATE TABLE `quines_somos_index` (
   `Titulo` varchar(255) NOT NULL,
   `Parrafo` mediumtext NOT NULL,
   `Imagen` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Volcado de datos para la tabla `quines_somos_index`
@@ -377,7 +377,7 @@ CREATE TABLE `secundaria_pag` (
   `Mod_Taller_3` text NOT NULL,
   `Mod_text_3` text NOT NULL,
   `Mod_img_3` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf16;
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_general_ci;
 
 --
 -- Volcado de datos para la tabla `secundaria_pag`
@@ -413,7 +413,7 @@ CREATE TABLE `servicios_index` (
   `6_img` text NOT NULL,
   `6_titulo` varchar(80) NOT NULL,
   `6_text` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Volcado de datos para la tabla `servicios_index`
@@ -459,7 +459,7 @@ CREATE TABLE `servicio_pag` (
   `Mod_titu_6` text NOT NULL,
   `Mod_text_6` text NOT NULL,
   `Mod_img_6` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Volcado de datos para la tabla `servicio_pag`
@@ -479,7 +479,7 @@ CREATE TABLE `slider_index` (
   `Imagen` text NOT NULL,
   `slider_text` varchar(255) NOT NULL,
   `Tipo_Letra` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Volcado de datos para la tabla `slider_index`
@@ -499,7 +499,7 @@ INSERT INTO `slider_index` (`Id_img`, `Imagen`, `slider_text`, `Tipo_Letra`) VAL
 CREATE TABLE `tipo_usuario` (
   `Id_Tipo` int(11) NOT NULL,
   `Tipo` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Volcado de datos para la tabla `tipo_usuario`
@@ -523,7 +523,7 @@ CREATE TABLE `user_padres` (
   `Telefono` varchar(15) NOT NULL,
   `Pass` text NOT NULL,
   `Id_Estatus` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Volcado de datos para la tabla `user_padres`
@@ -793,7 +793,7 @@ CREATE TABLE `usuarios` (
   `Pass` text NOT NULL,
   `Id_Tipo` int(11) NOT NULL,
   `Id_Estatus` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Volcado de datos para la tabla `usuarios`

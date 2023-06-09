@@ -183,16 +183,11 @@ if(isset($_SESSION['Usuario'])){
             </div>
           </div>
         </nav>
-
       </div>
     </div>
-
     <div class="container-fluid">
-          
           <center><h1>QUIENES SOMOS</h1></center>
           <hr class="featurette-divider">
-
-
           <div class="section">
             <div class="container">
                 <div class="row">
@@ -291,9 +286,7 @@ if(isset($_SESSION['Usuario'])){
                             </tr>
                                 <?php 
                                 }
-                             ?>
-
-                                
+                             ?>   
                         </tbody>
                         </table>
                     </div>
@@ -327,7 +320,7 @@ if(isset($_SESSION['Usuario'])){
                                 <div class="form-group">
                                     <label class="col-md-4 control-label" for="file">Texto</label>
                                     <div class="col-md-5">
-                                        <div class="input-group">
+                                          <div class="input-group">
                                   <textarea id="text_1" name="text_1" class="form-control" ><?php echo $rs_num_1['tex'] ?>
                                       </textarea>
                                         </div>
@@ -341,7 +334,7 @@ if(isset($_SESSION['Usuario'])){
                         </form>
                     </div>
                 </div>
-            </div>
+            </div>1
         </div>
         <!-- Modal 2===============================================================================================-->
  <div class="fade modal" id="Edit_num_1">
@@ -386,9 +379,6 @@ if(isset($_SESSION['Usuario'])){
                 </div>
             </div>
         </div>
-
-
-
  </div>
 <footer>
   <p>Footer</p>

@@ -8,8 +8,8 @@ if(isset($_SESSION['Usuario'])){
         $statement -> execute(array());
         $SLIDER = $statement -> fetchAll();
 
-         $sql= 'SELECT * FROM  quines_somos_index';
-        $statement = $pdo->prepare($sql);
+         $sql2= 'SELECT * FROM  quines_somos_index';
+        $statement = $pdo->prepare($sql2);
         $statement -> execute(array());
         $Queines_somos = $statement -> fetchAll();
 
@@ -145,7 +145,6 @@ if(isset($_SESSION['Usuario'])){
 
     <div class="navbar-wrapper">
       <div class="container">
-
         <nav class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div class="navbar-header">
@@ -198,24 +197,19 @@ if(isset($_SESSION['Usuario'])){
             </div>
           </div>
         </nav>
-
       </div>
     </div>
-
     <div class="container-fluid">
-          
-          <center><h1>SLIDER INICIO</h1></center>
+        <center><h1>SLIDER INICIO</h1></center>
           <hr class="featurette-divider">
-
-
           <div class="section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
                         <table class="table table-hover table-striped">
-                             <th>Id_Slider</th>
+                            <th>Id_Slider</th>
                              <th>Nombre</th>
-                             <th> </th>
+                             <th>Acciones</th>
                         <tbody>
                                 <?php 
                                 foreach ($SLIDER as $rs ) {
@@ -238,8 +232,6 @@ if(isset($_SESSION['Usuario'])){
                                 <?php 
                                 }
                              ?>
-
-                                
                         </tbody>
                         </table>
                     </div>
@@ -252,11 +244,12 @@ if(isset($_SESSION['Usuario'])){
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h2 class="modal-title" id="myModalLabel">Cambio Imagen</h2>
+                        <h2 class="modal-title" id="myModalLabel">Cambio Imagen Slider</h2>
                     </div>
                     <div class="modal-body">
-                        <form class="form-horizontal" method="post" action="Index/Slider_img_cambio.php" 
+                        <form class="form-horizontal" method="post" action="Index/slider_img_cambio.php" 
                         enctype="multipart/form-data">
+                        
                             <fieldset>
                             <div class="form-group" style='display:none;' >
                                     <label class="col-md-4 control-label" for="Id_img">Id imagen</label>
@@ -276,7 +269,7 @@ if(isset($_SESSION['Usuario'])){
                                             <span class="input-group-addon">
                                                 <i class="fa fa-user"></i>
                                             </span>
-                                            <input id="Id_img" readonly="readonly"  name="Id_img" class="form-control"  type="text" value="<?php echo $rs_edit_img['Id_img'] ?>" required="">
+                                            <input id="Id_img" readonly="readonly"  name="Id_img" class="form-control"  type="number" value="<?php echo $rs_edit_img['Id_img'] ?>" required="">
                                         </div>
                                     </div>
                                 </div>
@@ -292,17 +285,12 @@ if(isset($_SESSION['Usuario'])){
                                     <button type="submit" class="btn btn-primary">
                                         <i class="fa fa-fw fa-save"></i>Guardar</button>
                                 </div>
-                                
                             </fieldset>
-
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
 
 <!-- Quienes somos ==================================================================================================== -->
 
@@ -328,12 +316,8 @@ if(isset($_SESSION['Usuario'])){
                               <td><?php echo $rs['Id_Quienes'] ?></td>
                               <td><?php echo $rs['Titulo'] ?></td>
                               <td><?php echo $rs['Parrafo'] ?></td>
-                              <td><img src="../Images2/<?php echo $rs['Imagen'] ?>" alt="" class="img-thumbnail" width="200px" height="150px" >
-                              </td>  
-
-
-
-                              <td><div class="btn-group" role="group" aria-label="...">
+                              <td><img src="../Images2/<?php echo $rs['Imagen'] ?>" alt="" class="img-thumbnail" width="200px" height="150px" ></td>  
+                                <td><div class="btn-group" role="group" aria-label="...">
                                   <div class="btn-group" role="group">
                                   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
                                    Configuraciones<span class="caret"></span>
@@ -347,7 +331,7 @@ if(isset($_SESSION['Usuario'])){
                                           </div>
                               </td>
                             </tr>
-                                <?php 
+                                <?php
                                 }
                              ?>
 
@@ -367,7 +351,7 @@ if(isset($_SESSION['Usuario'])){
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        <h2 class="modal-title" id="myModalLabel">Cambio Imagen</h2>
+                        <h2 class="modal-title" id="myModalLabel">Cambio Texto</h2>
                     </div>
                     <div class="modal-body">
                         <form class="form-horizontal" method="post" action="Index/edit_quien.php" 

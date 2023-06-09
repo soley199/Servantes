@@ -46,7 +46,5 @@
 		  }else{
 		  echo "Formato no soportado";
 		  }
-
-		
 	}
 ?>
